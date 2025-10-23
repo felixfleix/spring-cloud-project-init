@@ -1,5 +1,6 @@
 package com.felix.response;
 
+import com.felix.exception.ErrorCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -53,6 +54,10 @@ public class PageResponse<T> extends MultiResponse<T> {
 
     public static <T> PageResponse<T> fail(Integer currentPage, Integer pageSize, String code, String message) {
         return of(null, currentPage, pageSize, 0, code, message, false);
+    }
+
+    public static <T> PageResponse<T> fail(Integer currentPage, Integer pageSize, ErrorCode errorCode) {
+        return of(null, currentPage, pageSize, 0, errorCode.getCode(), errorCode.getMessage(), false);
     }
 
 }

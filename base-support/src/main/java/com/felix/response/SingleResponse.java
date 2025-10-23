@@ -1,5 +1,6 @@
 package com.felix.response;
 
+import com.felix.exception.ErrorCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,6 +30,10 @@ public class SingleResponse<T> extends BaseResponse {
 
     public static <T> SingleResponse<T> fail(String code, String message) {
         return of(null, code, message, false);
+    }
+
+    public static <T> SingleResponse<T> fail(ErrorCode errorCode) {
+        return of(null, errorCode.getCode(), errorCode.getMessage(), false);
     }
 
 }

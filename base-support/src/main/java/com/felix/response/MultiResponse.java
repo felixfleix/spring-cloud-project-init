@@ -1,5 +1,6 @@
 package com.felix.response;
 
+import com.felix.exception.ErrorCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,6 +31,10 @@ public class MultiResponse<T> extends BaseResponse {
 
     public static <T> MultiResponse<T> fail(String code, String message) {
         return of(null, code, message, false);
+    }
+
+    public static <T> MultiResponse<T> fail(ErrorCode errorCode) {
+        return of(null, errorCode.getCode(), errorCode.getMessage(), false);
     }
 
 }

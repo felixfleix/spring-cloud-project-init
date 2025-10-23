@@ -17,6 +17,7 @@ public class BaseResponse implements Serializable {
      * 响应状态码
      *
      * @see com.felix.response.ResponseCode
+     * @see com.felix.exception.BizErrorCode
      */
     private String code;
 
