@@ -1,0 +1,21 @@
+package com.felix.handler;
+
+import jakarta.websocket.server.ServerEndpointConfig;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class CustomWebSocketServerConfig extends ServerEndpointConfig.Configurator implements ApplicationContextAware {
+
+    private ApplicationContext applicationContext;
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
+
+    @Override
+    public <T> T getEndpointInstance(Class<T> clazz) throws InstantiationException {
+        return applicationContext.getBean(clazz);
+    }
+}
