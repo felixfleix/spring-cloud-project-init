@@ -9,25 +9,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mybatis-support</artifactId>
+    <artifactId>datasource-interface</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>3.0.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.felix</groupId>
-            <artifactId>datasource-interface</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

@@ -12,7 +12,9 @@
     <artifactId>datasource-support</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>datasource-interface</module>
         <module>mybatis-support</module>
+        <module>mybatisPlus-support</module>
     </modules>
 
     <properties>

@@ -107,6 +107,18 @@
                 <artifactId>mybatis-support</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.felix</groupId>
+                <artifactId>mybatisPlus-support</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.felix</groupId>
+                <artifactId>datasource-interface</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
