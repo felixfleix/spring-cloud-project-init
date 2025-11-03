@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: webSocket-support
-server:
-  port: 8081
