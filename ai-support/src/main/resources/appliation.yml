@@ -1,0 +1,4 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-1234567890

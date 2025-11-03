@@ -24,7 +24,9 @@
     <modules>
         <module>base-support</module>
         <module>web-support</module>
-        <module>datasource-support</module>
+        <module>dataOp-support</module>
+        <module>ai-support</module>
+        <module>user-service</module>
     </modules>
     <scm>
         <connection/>
@@ -37,11 +39,6 @@
         <spring-cloud.version>2025.0.0</spring-cloud.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -116,7 +113,13 @@
 
             <dependency>
                 <groupId>com.felix</groupId>
-                <artifactId>datasource-interface</artifactId>
+                <artifactId>dataOp-interface</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.felix</groupId>
+                <artifactId>ai-support</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
