@@ -9,10 +9,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>datasource-support</artifactId>
+    <artifactId>dataOp-support</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>datasource-interface</module>
+        <module>dataOp-interface</module>
         <module>mybatis-support</module>
         <module>mybatisPlus-support</module>
     </modules>

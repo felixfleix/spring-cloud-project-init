@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan(basePackages = {"com.felix.mapper"})
+@MapperScan(basePackages = {"com.felix.infrastructure.mapper"})
 public class MybatisPlusConfiguration {
 
     @Bean
