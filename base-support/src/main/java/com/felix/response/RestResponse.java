@@ -1,7 +1,7 @@
 package com.felix.response;
 
 import com.alibaba.fastjson2.JSONObject;
-import jakarta.annotation.Nullable;
+import com.felix.annotation.Nullable;
 import lombok.Getter;
 import lombok.Setter;
 
