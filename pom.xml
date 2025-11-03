@@ -22,11 +22,8 @@
         <developer/>
     </developers>
     <modules>
-        <module>base-support</module>
-        <module>web-support</module>
-        <module>dataOp-support</module>
-        <module>ai-support</module>
-        <module>user-service</module>
+        <module>common-support</module>
+        <module>business-service</module>
     </modules>
     <scm>
         <connection/>
