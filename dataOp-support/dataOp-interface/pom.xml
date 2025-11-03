@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.felix</groupId>
-        <artifactId>datasource-support</artifactId>
+        <artifactId>dataOp-support</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>datasource-interface</artifactId>
+    <artifactId>dataOp-interface</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
