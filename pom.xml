@@ -119,6 +119,12 @@
                 <artifactId>ai-support</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.felix</groupId>
+                <artifactId>file-support</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

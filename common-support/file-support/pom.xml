@@ -5,25 +5,28 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.felix</groupId>
-        <artifactId>spring-cloud-project-init</artifactId>
+        <artifactId>common-support</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <packaging>pom</packaging>
-    <artifactId>common-support</artifactId>
-
-    <modules>
-        <module>base-support</module>
-        <module>web-support</module>
-        <module>dataOp-support</module>
-        <module>ai-support</module>
-        <module>file-support</module>
-    </modules>
+    <artifactId>file-support</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.felix</groupId>
+            <artifactId>web-support</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

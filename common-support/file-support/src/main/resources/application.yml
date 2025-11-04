@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  tomcat:
+    # 最大可接收的请求大小
+    max-swallow-size: 10MB
+spring:
+  application:
+    name: file-support
+  servlet:
+    multipart:
+      # 开启文件上传
+      enabled: true
+      # 上传文件的临时目录
+      location: /tmp
+      # 文件大小阈值，单位为字节，当文件大小超过该值时，会立即将文件写入磁盘而不是内存中
+      file-size-threshold: 0
+      # 单个文件的最大大小，单位为字节
+      max-file-size: 10MB
+      # 整个请求的最大大小，单位为字节
+      max-request-size: 10MB
+      # 是否延迟解析请求体，默认为false，即，在请求处理的早期阶段（请求进入时）就解析数据，而不是在实际访问文件时才解析
+      resolve-lazily: false
