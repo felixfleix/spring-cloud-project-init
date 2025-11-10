@@ -1,4 +1,4 @@
-package com.felix.domain.bean;
+package com.felix.domain.constant;
 
 public enum FileType {
 

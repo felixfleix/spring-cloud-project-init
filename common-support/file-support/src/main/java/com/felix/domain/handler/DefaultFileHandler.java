@@ -1,6 +1,6 @@
 package com.felix.domain.handler;
 
-import com.felix.domain.bean.FileType;
+import com.felix.domain.constant.FileType;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Arrays;

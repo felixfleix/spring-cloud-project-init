@@ -1,6 +1,6 @@
 package com.felix.controller;
 
-import com.felix.domain.bean.FileType;
+import com.felix.domain.constant.FileType;
 import com.felix.domain.handler.DefaultFileHandler;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServletResponse;
