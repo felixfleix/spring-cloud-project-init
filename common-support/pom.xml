@@ -18,6 +18,7 @@
         <module>dataOp-support</module>
         <module>ai-support</module>
         <module>file-support</module>
+        <module>cache-support</module>
     </modules>
 
     <properties>

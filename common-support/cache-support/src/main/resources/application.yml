@@ -1,0 +1,16 @@
+spring:
+  data:
+    redis:
+      database:
+      host:
+      port:
+      password:
+      ssl:
+      timeout:
+      connectTimeout:
+      clientName:
+      cluster:
+        nodes:
+      sentinel:
+        master:
+        nodes:
