@@ -4,17 +4,17 @@ spring:
   config:
     import: classpath:mybatisplus.yml
   datasource:
-    #    driver-class-name: org.h2.Driver
+    driver-class-name: org.h2.Driver
     #    url: jdbc:h2:mem:testdb
-    #    url: jdbc:h2:file:./data/h2/testdb
-    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:h2:file:./data/h2/testdb
+#    driver-class-name: org.hsqldb.jdbc.JDBCDriver
     #    url: jdbc:hsqldb:mem:testdb
-    url: jdbc:hsqldb:file:./data/hsql/testdb
+#    url: jdbc:hsqldb:file:./data/hsql/testdb
     username: sa
     password:
   sql:
     init:
-      platform: hsql
+      platform: h2
       mode: always
   #      schema-locations: classpath:schema-hsql.sql
   #      data-locations: classpath:data.sql
